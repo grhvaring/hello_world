@@ -6,7 +6,9 @@ namespace hello_world
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var who = "World";
+            if (args.Length > 1) who = args[1];
+            Console.WriteLine("Hello {0}!", who);
         }
     }
 }
